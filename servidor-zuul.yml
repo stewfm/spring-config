@@ -10,7 +10,9 @@ zuul:
         path: /servempleados/** #path that will be intercepted
         serviceId: servicio-empleados
       
-eureka:                  
+eureka:
+  instance:
+    hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
