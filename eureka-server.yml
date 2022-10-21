@@ -7,5 +7,3 @@ eureka:
     #telling the server not to register himself in the service registry
     registerWithEureka: False
     fetchRegistry: False
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
